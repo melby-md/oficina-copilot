@@ -13,25 +13,49 @@
 <!--  LOBBY — visible before a game starts                          -->
 <!-- ============================================================= -->
 <div id="lobbyView" class="flex flex-col items-center justify-center min-h-full p-6">
-    <div class="text-center max-w-sm">
-        <div class="retro-banner mb-8">
-            <h1 class="text-4xl font-bold retro-title mb-2">SOC OPS</h1>
-            <p class="text-sm retro-subtitle">Social Bingo</p>
+    <div class="landing-hero">
+        <div class="retro-card p-8">
+            <div class="hero-pretitle mb-4">Retro social bingo</div>
+            <h1 class="text-5xl font-bold retro-title mb-4">SOC OPS</h1>
+            <p class="text-lg text-muted mb-8 max-w-2xl">Bring your next meetup to life with a playful bingo experience. Tap matching squares, chase a neon line, and unlock a celebratory victory screen.</p>
+
+            <div class="hero-actions">
+                <button onclick="launchGame()" class="btn-retro">Start Game</button>
+                <a href="#howto" class="btn-secondary">How it works</a>
+            </div>
         </div>
 
-        <div class="retro-card p-6 mb-8">
-            <h2 class="font-semibold text-white mb-3">How to play</h2>
-            <ul class="text-left text-muted text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-            </ul>
+        <div class="hero-preview retro-card p-6">
+            <div class="hero-pretitle mb-3">Play preview</div>
+            <div class="preview-grid">
+                <span class="preview-square">Free space</span>
+                <span class="preview-square">Speaks 3 languages</span>
+                <span class="preview-square">Has a hidden talent</span>
+                <span class="preview-square">Took a spontaneous trip</span>
+                <span class="preview-square">Has a coffee mug</span>
+                <span class="preview-square">Loves team trivia</span>
+                <span class="preview-square">Owns a pet</span>
+                <span class="preview-square">Works remotely</span>
+                <span class="preview-square">Has a board game</span>
+                <span class="preview-square">Enjoys night coding</span>
+            </div>
+            <p class="text-muted text-xs mt-4">Collect five in a row, trigger the neon win banner, and keep the party going.</p>
         </div>
+    </div>
 
-        <button onclick="launchGame()"
-                class="btn-retro w-full text-lg font-semibold">
-            Start Game
-        </button>
+    <div id="howto" class="landing-features">
+        <div class="feature-card retro-card p-5">
+            <h3>Instant fun</h3>
+            <p>Generate a lively bingo experience in seconds for meetups, workshops, and icebreakers.</p>
+        </div>
+        <div class="feature-card retro-card p-5">
+            <h3>Arcade-inspired vibe</h3>
+            <p>Keep energy high with neon accents, bold typography, and a stylish retro interface.</p>
+        </div>
+        <div class="feature-card retro-card p-5">
+            <h3>Easy to play</h3>
+            <p>Tap a square whenever someone matches it, then celebrate when a winning line appears.</p>
+        </div>
     </div>
 </div>
 
