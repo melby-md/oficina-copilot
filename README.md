@@ -1,51 +1,61 @@
 🌐 [Português (BR)](README.pt_BR.md) | [Español](README.es.md)
 
-# Soc Ops
+<!-- Hero -->
+# Soc Ops — Social Bingo for Friendlier Mixers
 
-Social Bingo game for in-person mixers. Find people who match the questions and get 5 in a row!
+Soc Ops transforma encontros presenciais em jogos sociais: um bingo de perguntas rápidas para quebrar o gelo, incentivar conversas e fazer conexões reais.
 
-📚 **[View Lab Guide](workshop/GUIDE.md)**
+📍 Projetado para workshops, meetups e atividades de team building — simples de configurar e divertido de jogar.
 
----
-
-## 📚 Lab Guide
-
-| Part | Title |
-|------|-------|
-| [**00**](workshop/00-overview.md) | Overview & Checklist |
-| [**01**](workshop/01-setup.md) | Setup & Context Engineering |
-| [**02**](workshop/02-design.md) | Design-First Frontend |
-| [**03**](workshop/03-quiz-master.md) | Custom Quiz Master |
-| [**04**](workshop/04-multi-agent.md) | Multi-Agent Development |
-
-> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
+📚 **Explore o guia do workshop:** [workshop/GUIDE.md](workshop/GUIDE.md)
 
 ---
 
-## Prerequisites
+**Por que usar Soc Ops?**
 
-- [Java 21 JDK](https://adoptium.net/) or higher
-- [Apache Maven 3.9+](https://maven.apache.org/) (or use the included Maven Wrapper)
+- **Rápido para iniciar:** roda com Java + Maven (ou o `mvnw` incluso).
+- **Personalizável:** prompts de icebreakers editáveis em `socops/src/main/java/com/socops/data/IcebreakerPrompts.java`.
+- **Pensado para facilitadores:** inclui material de workshop passo a passo em `workshop/`.
+- **Código aberto:** fácil de estender para salas híbridas ou eventos maiores.
 
-## Run
+---
+
+**Demonstração rápida**
+
+1. Abra um terminal
+2. Rode o backend Spring Boot:
 
 ```bash
 cd socops
 ./mvnw spring-boot:run
 ```
 
-## Build
+3. Abra `http://localhost:8080` no navegador e comece a jogar.
 
-```bash
-cd socops
-./mvnw clean package
-```
+---
 
-## Test
+**Conteúdo do repositório**
 
-```bash
-cd socops
-./mvnw test
-```
+- **`socops/`**: aplicativo Spring Boot (backend, templates, assets).
+- **`workshop/`**: material do lab dividido em passos (setup, design, quiz master, multi-agent).
+- **`docs/`**: documentação e recursos visuais para apresentação.
 
-Deploys automatically to GitHub Pages on push to `main`.
+---
+
+**Como contribuir**
+
+- Siga o [CONTRIBUTING.md](CONTRIBUTING.md) e abra PRs pequenas e focadas.
+- Quer adicionar perguntas temáticas ao jogo? Envie uma PR com novos prompts.
+
+---
+
+**Recursos úteis**
+
+- Guia completo do workshop: [workshop/GUIDE.md](workshop/GUIDE.md)
+- Código principal: [socops/src/main/java/com/socops](socops/src/main/java/com/socops)
+
+---
+
+Licença: [LICENSE](LICENSE)
+
+Se quiser, eu posso: atualizar também os READMEs em Português e Espanhol, ou gerar um screenshot/preview para a seção "Demonstração".
